@@ -13,13 +13,13 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'Silence At Times Speaks Louder Than Words','Avoid repetition if the person cannot react to what you are saying keep quite.',new Date(2020,12,18)),
     new Quote(5,'If You Want To Go Far Walk Alone','Too many cooks spoils the soup,work alone!',new Date(1998,6,30)),
     new Quote(6,'Getting No Message Is Also A Message','If someone is silent there is a reason behind that',new Date(2000,11,4)),
-  ]
+  ];
  toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-  deleteQuote(isComplete, index){
-    if (isComplete) {
-      let toDelete = confirm('Are you sure you want to delete ${this.quotes[index].name}?')
+  deleteQuote(isRead: any, index: number){
+    if (isRead) {
+      let toDelete = confirm('Are you sure you want to delete this quote?')
       if (toDelete)
       this.quotes.splice(index,1);
     }
