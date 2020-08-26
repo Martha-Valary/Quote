@@ -3,7 +3,7 @@
 **MARTHA VALARY**
 ## Description
 This is a web app build with angular and which allows
-a user to view quotes and either vote for or against them or even delete a quote, the user can also create and post their own quotes.
+a user to see uploaded quotes, like, dislike and add his/her favorite quote.
 ## Setup/Installation Requirements
 1. Fork from github repository: https://github.com/Martha-Valary/Quote.git
 2. Clone the same link to your local repository.

@@ -7,16 +7,12 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-
-  quote = new Quote(0,"","",new Date());
-  @Output() add = new EventEmitter<Quote>();
-  addQuote(){
-this.add.emit(this.quote);
-this.quote = new Quote(0,"","",new Date());
-  }
+  newquote = new Quote(0,"","",new Date());
+  @Output() addQuote = new EventEmitter<Quote>();
+  submitGoal(){
+    this.addQuote.emit(this.newquote);
+      }
   constructor() { }
-
   ngOnInit(): void {
   }
-
 }
